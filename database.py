@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import declarative_base
 
 
-db_url="mysql+pymysql://root:rootd@host.docker.internal:3306/mydb"
+db_url="mysql+pymysql://root:root@host.docker.internal:3306/mydb"
 engine = create_engine(db_url,echo=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 

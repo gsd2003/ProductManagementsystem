@@ -29,7 +29,7 @@ export default function Dashboard() {
 
   const fetchCategories = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/categories");
+      const res = await fetch("http://43.205.146.220:8000/categories");
       const data = await res.json();
       setCategories(data);
     } catch (err) {

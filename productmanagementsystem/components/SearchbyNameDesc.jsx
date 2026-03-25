@@ -22,7 +22,7 @@ export default function SearchbyNameDesc() {
   
   const fetchProducts = async () => {
     try {
-      const url = `http://127.0.0.1:8000/products/search?q=${encodeURIComponent(query)}&page=${page}&limit=${limit}`;
+      const url = `http://43.205.146.220:8000/search?q=${encodeURIComponent(query)}&page=${page}&limit=${limit}`;
       console.log("Fetching:", url);
 
       const res = await fetch(url);

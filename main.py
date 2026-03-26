@@ -65,7 +65,7 @@ async def add_product(
             shutil.copyfileobj(image.file, buffer)
 
         
-        image_url = f"http://localhost:8000/images/{safe_name}"
+        image_url = f"http://43.205.238.200:8000/images/{safe_name}"
 
         # ✅ Save product to DB
         new_product = database_models.Product(
@@ -216,7 +216,7 @@ def update_product_image(
         shutil.copyfileobj(file.file, buffer)
 
     # ✅ Update DB
-    new_image_url = f"http://localhost:8000/images/{new_filename}"
+    new_image_url = f"http://43.205.238.200:8000/images/{new_filename}"
     product.imagepath = new_image_url
     db.commit()
     db.refresh(product)

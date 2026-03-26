@@ -44,11 +44,11 @@ export default function SearchProductCatlog() {
 
     
     if (selectedCategory) {
-      url = `http://43.205.146.220:8000/products/${selectedCategory}?page=${page}&limit=${limit}`;
+      url = `http://43.205.238.200:8000/products/${selectedCategory}?page=${page}&limit=${limit}`;
     }
 
     else {
-      url = `http://43.205.146.220:8000/products?page=${page}&limit=${limit}`;
+      url = `http://43.205.238.200:8000/products?page=${page}&limit=${limit}`;
     }
 
     console.log("Fetching URL:", url);

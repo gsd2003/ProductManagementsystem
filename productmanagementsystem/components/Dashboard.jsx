@@ -4,7 +4,7 @@ import { Form, Button, Navbar, Container, Nav, Card, Table, Spinner, Modal, Badg
 import { FaImage, FaEdit, FaTrash, FaUpload } from 'react-icons/fa';
 import SearchProductCatlog from "./SearchProductCatlog"; // Assuming this is a link/component
 
-const API = "http://127.0.0.1:8000/products";
+const API = "http://43.205.238.200:8000/products";
 
 export default function Dashboard() {
   const [products, setProducts] = useState([]);

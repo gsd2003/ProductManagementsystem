@@ -11,7 +11,7 @@ services:
       - uploads:/app/uploads
 
   frontend:
-    build: ./productmanagementsystem
+    build: ./Productmanagementsystem
     ports:
       - "3000:80"
     depends_on:

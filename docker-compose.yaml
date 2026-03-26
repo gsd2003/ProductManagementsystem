@@ -15,6 +15,13 @@ services:
     depends_on:
       - backend
 
+  db:
+    image: mariadb
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: mydb
+
 volumes:
-  uploads:              
-  
+  uploads:

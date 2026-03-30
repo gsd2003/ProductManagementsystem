@@ -13,7 +13,7 @@ export default function Login() {
   e.preventDefault();
 
   try {
-    const response = await fetch("http://43.205.238.200:8000/login", {
+    const response = await fetch("http://13.232.170.0:8000/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"   

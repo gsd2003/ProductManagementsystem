@@ -22,7 +22,7 @@ export default function SearchProductCatlog() {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const res = await fetch("http://43.205.146.220:8000/categories");
+        const res = await fetch("http://13.232.170.0:8000/categories");
         const data = await res.json();
         setCategories(data);
       } catch (err) {
@@ -44,11 +44,11 @@ export default function SearchProductCatlog() {
 
     
     if (selectedCategory) {
-      url = `http://43.205.238.200:8000/products/${selectedCategory}?page=${page}&limit=${limit}`;
+      url = `http://13.232.170.0:8000/products/${selectedCategory}?page=${page}&limit=${limit}`;
     }
 
     else {
-      url = `http://43.205.238.200:8000/products?page=${page}&limit=${limit}`;
+      url = `http://13.232.170.0:8000/products?page=${page}&limit=${limit}`;
     }
 
     console.log("Fetching URL:", url);

@@ -4,7 +4,7 @@ import { Form, Button, Navbar, Container, Nav, Card, Table, Spinner, Modal, Badg
 import { FaImage, FaEdit, FaTrash, FaUpload } from 'react-icons/fa';
 import SearchProductCatlog from "./SearchProductCatlog"; // Assuming this is a link/component
 
-const API = "http://43.205.238.200:8000/products";
+const API = "http://13.232.170.0:8000/products";
 
 export default function Dashboard() {
   const [products, setProducts] = useState([]);
@@ -29,7 +29,7 @@ export default function Dashboard() {
 
   const fetchCategories = async () => {
     try {
-      const res = await fetch("http://43.205.238.200:8000/categories");
+      const res = await fetch("http://13.232.170.0:8000/categories");
       const data = await res.json();
       setCategories(data);
     } catch (err) {
